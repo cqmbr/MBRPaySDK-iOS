@@ -7,19 +7,20 @@
 
 在工程的Podfile文件里面添加以下代码：
 ```
-  pod 'DCPaySDK'
+  pod 'MBRPaySDK','~>1.0.6'
 ```
   保存并执行pod install,然后用后缀为.xcworkspace的文件打开工程。
 
 #### 选择二：手动导入
 
-把文件DCPaySDK.framework拷贝到项目文件夹下，并导入到项目工程中。
+把文件MBRPaySDK.framework拷贝到项目文件夹下，并导入到项目工程中。
 在Build Phases选项卡的Link Binary With Libraries中，增加以下依赖：
 ![avatar](https://raw.githubusercontent.com/cqmbr/DCPaySDK-iOS/master/docs/images/link_librarys.png)
+将 MBRPaySDK.framework 中的 MBRPaySDKResource.bundle 添加到工程
 
 
 ### 配置白名单
-sdk会查询dcpay是否安装，因此需要在info.plist文件中配置白名单。
+sdk会查询pay app是否安装，因此需要在info.plist文件中配置白名单。如下图所示，格式为mbrpay+渠道号
 ![avatar](https://raw.githubusercontent.com/cqmbr/DCPaySDK-iOS/master/docs/images/add_scheme.png)
 
 ### 配置scheme
@@ -39,6 +40,7 @@ sdk会查询dcpay是否安装，因此需要在info.plist文件中配置白名�
     orderDic[@"amount"] = @"1.0000";
     orderDic[@"attach"] = @"api_prepay";
     orderDic[@"coinId"] = @"34190899187000";
+    orderDic[@"channel"] = @"10000000000003";//渠道id
     orderDic[@"merchantId"] = @"10000000000003";//商户id
     orderDic[@"orginAmount"] = @"0";
     orderDic[@"payBillNo"] = @"40476859839485";
@@ -53,7 +55,16 @@ sdk会查询dcpay是否安装，因此需要在info.plist文件中配置白名�
     NSString *appScheme = @"paysdkdemo";
     
     //调用sdk开始支付
-    [[DCPaySDK defaultService] payOrder:orderInfo fromScheme:appScheme];
+    [[MBRPaySDK defaultService] payOrder:orderInfo fromScheme:appScheme callBack:^(NSDictionary *errorDic) {
+        NSInteger resultStatus = [errorDic[@"resultStatus"] integerValue];
+        if (resultStatus == 4) {
+            [MBProgressHUD bwm_showTitle:@"用户取消安装pay app" toView:self.view hideAfter:2];
+        } else if (resultStatus == 5) {
+            [MBProgressHUD bwm_showTitle:@"正在安装pay app" toView:self.view hideAfter:2];
+        } else if (resultStatus == 6) {
+            [MBProgressHUD bwm_showTitle:@"参数缺少渠道号" toView:self.view hideAfter:2];
+        }
+    }];
 ```
 
 详细可参见Demo中示例文件
@@ -61,18 +72,18 @@ sdk会查询dcpay是否安装，因此需要在info.plist文件中配置白名�
 - PaySDKDemo\ViewController.m
 
 ### 支付回调处理
-配置DCPay客户端返回url处理方法（外部存在DCPay，DCPay将处理结果通过url返回。）</br> 
+配置Pay客户端返回url处理方法（Pay App将处理结果通过url返回。）</br> 
 如示例PaySDKDemo\AppDelegate.m文件中，增加引用代码：
 ```objc
-#import <DCPaySDK/DCPaySDK.h>
+#import <MBRPaySDK/MBRPaySDK.h>
 ```
 在@implementation AppDelegate中以下代码中的NSLog改为实际业务处理代码：
 ```objc
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     
     if ([url.host isEqualToString:@"dcspay"]) {
-        // 支付跳转DCPay钱包进行支付，处理支付结果
-        [[DCPaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        // 处理支付结果
+        [[MBRPaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"result = %@",resultDic);
         }];
     }
@@ -84,8 +95,8 @@ sdk会查询dcpay是否安装，因此需要在info.plist文件中配置白名�
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
     
     if ([url.host isEqualToString:@"dcpay"]) {
-        // 支付跳转DCPay钱包进行支付，处理支付结果
-        [[DCPaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        // 处理支付结果
+        [[MBRPaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"result = %@",resultDic);
         }];
     }
@@ -95,7 +106,7 @@ sdk会查询dcpay是否安装，因此需要在info.plist文件中配置白名�
 
 ## Demo
 ### Demo地址：
-https://github.com/cqmbr/DCPaySDK-iOS.git </br>
+https://github.com/cqmbr/MBRPaySDK-iOS.git </br>
 
 ### Demo使用说明：
 demo代码位于Sample目录，在Sample目录执行pod update，然后用后缀为.xcworkspace的文件打开工程运行即可。
@@ -124,17 +135,25 @@ PaySDKDemo\Security及下面所有文件
 /**
  *  支付接口
  *
- *  @param orderStr       支付请求参数字符串，主要包含商户的订单信息，key=value形式，以&连接。
- *  @param schemeStr      商户程序注册的URL protocol，供支付完成后回调商户程序使用。
+ *  @param orderStr       订单信息
+ *  @param schemeStr      调用支付的app注册在info.plist中的scheme
+ *  @param errorCallBack  错误回调
  */
 - (void)payOrder:(NSString *)orderStr
-      fromScheme:(NSString *)schemeStr;
+      fromScheme:(NSString *)schemeStr
+        callBack:(errorBlock)errorCallBack;
 ```
 
 
 orderStr示例如下：
 
 "amount=1.0000&attach=api_prepay&coinId=34190899187000&merchantId=10000000000003&orginAmount=0&payBillNo=40476859839485&refBizNo=2000010008&toAddr=0x91f8654587917f3a0c7cfc5fa05bd86dc0162ddb&sign=xCYemw/bby0dKUV6oGuKrbol/YQ2YpEQ1x9jkRz9WkJiI6OacJdYK5si7ZqFZA/kDUA9yywG5Poa3SZMHRjortRO1LdqPrw8l8EA/zToo9QjPghfO5aDaiXJCa8n8OiUUV0h8+N7crOQyKVwcGVuVZ0vMYGINrijIsPV3/u8Pqkk7LGVJgzTfcDUMjQ9HHsfsL3TLXdN32dZ8RmBMS7+OvVheRQqZszq2QyaJ/i+6ufcyMmYGqchydZpsPNAEJhdzUw3gIbSaKzaC+uRDvdyh74BycWZTkWc8iBjgWfcx8YOqoAeX8Z5Mgh6dHPQa/g5CXBAQi9klJNl1fvqjrTIXA=="
+
+错误回调参数名称                |描述               
+-----------------------------|----------------------------------
+resultStatus                 |  结果码：4-用户取消安装；5-用户正在安装；6-缺少渠道号；            
+message                      |  支付结果描述               
+orderInfo                    |  商户app调用支付接口时传入的订单字符串，透传回来  
 
 ### 处理客户端返回url
 ```objc
@@ -150,7 +169,7 @@ orderStr示例如下：
 
 参数名称                      |描述               
 -----------------------------|----------------------------------
-resultStatus                 |  结果码：1-支付成功；2-取消支付                 
+resultStatus                 |  结果码：1-支付成功；2-取消支付；3-参数错误；
 message                      |  支付结果描述               
 orderInfo                    |  商户app调用支付接口时传入的订单字符串，透传回来  
 
