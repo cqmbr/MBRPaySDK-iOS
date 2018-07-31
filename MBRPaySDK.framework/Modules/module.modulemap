@@ -1,0 +1,6 @@
+framework module MBRPaySDK {
+  umbrella header "MBRPaySDK.h"
+
+  export *
+  module * { export * }
+}

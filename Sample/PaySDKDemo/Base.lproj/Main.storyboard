@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ1-4O-Edc">
+                                <rect key="frame" x="87.5" y="120" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.31764705882352939" green="0.56470588235294117" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="hTA-Fv-xTF"/>
+                                    <constraint firstAttribute="height" constant="50" id="o2U-lx-R2O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Pay 0.01 ETH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickPayETHButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixI-Re-wuN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZe-Dd-94R">
+                                <rect key="frame" x="87" y="210" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.56470588239999997" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Nr-bN-bi5"/>
+                                    <constraint firstAttribute="width" constant="200" id="R94-Bv-OgY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Pay 1 PH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickPayPHButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SKR-CT-EuF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JE-Nd-ipO">
+                                <rect key="frame" x="87" y="300" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.56470588239999997" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="H7w-B8-H2w"/>
+                                    <constraint firstAttribute="height" constant="50" id="uQg-16-PMK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="模拟下单购买">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickSimulationPayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9PO-aY-u55"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AZe-Dd-94R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VeH-6L-o2V"/>
+                            <constraint firstItem="AZe-Dd-94R" firstAttribute="top" secondItem="LJ1-4O-Edc" secondAttribute="bottom" constant="40" id="XQU-t3-2GQ"/>
+                            <constraint firstItem="LJ1-4O-Edc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="YzJ-Hd-v9w"/>
+                            <constraint firstItem="LJ1-4O-Edc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f6r-yL-h67"/>
+                            <constraint firstItem="8JE-Nd-ipO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fH7-NY-OKw"/>
+                            <constraint firstItem="8JE-Nd-ipO" firstAttribute="top" secondItem="AZe-Dd-94R" secondAttribute="bottom" constant="40" id="vOJ-n7-fbn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

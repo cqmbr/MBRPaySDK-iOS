@@ -1,0 +1,10 @@
+/* 
+  MBRPaySDKLanguage.strings
+  MBRPaySDKResource
+
+  Created by sean on 2018/7/27.
+  Copyright © 2018 sean. All rights reserved.
+*/
+"title" = "您尚未安裝支付APP，請先安裝.";
+"cancel" = "取消";
+"install" = "安裝";

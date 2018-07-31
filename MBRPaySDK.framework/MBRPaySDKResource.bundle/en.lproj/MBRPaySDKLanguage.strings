@@ -1,0 +1,10 @@
+/* 
+  MBRPaySDKLanguage.strings
+  MBRPaySDKResource
+
+  Created by sean on 2018/7/27.
+  Copyright © 2018 sean. All rights reserved.
+*/
+"title" = "You haven't installed it yet, go to the installation page.";
+"cancel" = "Cancel";
+"install" = "Install";

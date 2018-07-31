@@ -1,0 +1,10 @@
+/* 
+  MBRPaySDKLanguage.strings
+  MBRPaySDKResource
+
+  Created by sean on 2018/7/27.
+  Copyright © 2018 sean. All rights reserved.
+*/
+"title" = "당신은 아직 지불 앱이 설치되어 있지 않습니다. 먼저 설치하십시오. ";
+"cancel" = "취소";
+"install" = "설치";
