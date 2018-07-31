@@ -13,8 +13,8 @@
 #import <MBProgressHUD+BWMExtension/MBProgressHUD+BWMExtension.h>
 
 static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
-static const NSString *channel = @"38682966843081";
-static const NSString *merchantId = @"89898477937650";
+static const NSString *channel = @"73088886094000";
+static const NSString *merchantId = @"10000000000003";
 
 @interface ViewController ()
 
