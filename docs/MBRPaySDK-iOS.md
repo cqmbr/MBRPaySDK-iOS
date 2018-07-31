@@ -15,17 +15,17 @@
 
 把文件MBRPaySDK.framework拷贝到项目文件夹下，并导入到项目工程中。
 在Build Phases选项卡的Link Binary With Libraries中，增加以下依赖：
-![avatar](https://raw.githubusercontent.com/cqmbr/DCPaySDK-iOS/master/docs/images/link_librarys.png)
+![avatar](https://raw.githubusercontent.com/cqmbr/MBRPaySDK-iOS/master/docs/images/link_librarys.png)
 将 MBRPaySDK.framework 中的 MBRPaySDKResource.bundle 添加到工程
 
 
 ### 配置白名单
 sdk会查询pay app是否安装，因此需要在info.plist文件中配置白名单。如下图所示，格式为mbrpay+渠道号
-![avatar](https://raw.githubusercontent.com/cqmbr/DCPaySDK-iOS/master/docs/images/add_scheme.png)
+![avatar](https://raw.githubusercontent.com/cqmbr/MBRPaySDK-iOS/master/docs/images/add_scheme.png)
 
 ### 配置scheme
 点击项目名称，点击“Info”选项卡，在“URL Types”选项中，点击“+”，在“URL Schemes”中输入“paysdkdemo”。
-![avatar](https://raw.githubusercontent.com/cqmbr/DCPaySDK-iOS/master/docs/images/set_scheme.jpg)
+![avatar](https://raw.githubusercontent.com/cqmbr/MBRPaySDK-iOS/master/docs/images/set_scheme.jpg)
 
 注意：这里的URL Schemes中输入的“paysdkdemo”，为测试demo，参考demo文件“ViewController.m”的NSString *appScheme = @"paysdkdemo"。
 实际商户的app中要填写独立的scheme，建议跟商户的app有一定的标示度，要做到和其他的商户app不重复，否则可能会导致dcpay返回的结果无法正确跳回商户app。
