@@ -51,7 +51,7 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     
     if ([url.host isEqualToString:@"mbrpay"]) {
-        // 支付跳转COSPay钱包进行支付，处理支付结果
+        //跳转Pay App进行支付，处理支付结果
         [[MBRPaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"result = %@",resultDic);
             [[NSNotificationCenter defaultCenter] postNotificationName:@"MBRPayResult" object:resultDic];
@@ -64,7 +64,7 @@
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
     
     if ([url.host isEqualToString:@"mbrpay"]) {
-        // 支付跳转COSPay钱包进行支付，处理支付结果
+        ////跳转Pay App进行支付，处理支付结果
         [[MBRPaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"result = %@",resultDic);
             [[NSNotificationCenter defaultCenter] postNotificationName:@"MBRPayResult" object:resultDic];
