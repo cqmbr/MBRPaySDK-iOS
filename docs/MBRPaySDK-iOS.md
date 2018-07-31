@@ -13,10 +13,10 @@
 
 #### 选择二：手动导入
 
-把文件MBRPaySDK.framework拷贝到项目文件夹下，并导入到项目工程中。
+1、把文件MBRPaySDK.framework拷贝到项目文件夹下，并导入到项目工程中。
 在Build Phases选项卡的Link Binary With Libraries中，增加以下依赖：
 ![avatar](https://raw.githubusercontent.com/cqmbr/MBRPaySDK-iOS/master/docs/images/link_librarys.png)
-将 MBRPaySDK.framework 中的 MBRPaySDKResource.bundle 添加到工程
+2、将 MBRPaySDK.framework 中的 MBRPaySDKResource.bundle 添加到工程
 
 
 ### 配置白名单
@@ -28,7 +28,7 @@ sdk会查询pay app是否安装，因此需要在info.plist文件中配置白名
 ![avatar](https://raw.githubusercontent.com/cqmbr/MBRPaySDK-iOS/master/docs/images/set_scheme.jpg)
 
 注意：这里的URL Schemes中输入的“paysdkdemo”，为测试demo，参考demo文件“ViewController.m”的NSString *appScheme = @"paysdkdemo"。
-实际商户的app中要填写独立的scheme，建议跟商户的app有一定的标示度，要做到和其他的商户app不重复，否则可能会导致dcpay返回的结果无法正确跳回商户app。
+实际商户的app中要填写独立的scheme，建议跟商户的app有一定的标示度，要做到和其他的商户app不重复，否则可能会导致支付app返回的结果无法正确跳回商户app。
 
 ## sdk使用
 ### 组装支付请求
@@ -40,7 +40,7 @@ sdk会查询pay app是否安装，因此需要在info.plist文件中配置白名
     orderDic[@"amount"] = @"1.0000";
     orderDic[@"attach"] = @"api_prepay";
     orderDic[@"coinId"] = @"34190899187000";
-    orderDic[@"channel"] = @"10000000000003";//渠道id
+    orderDic[@"channel"] = @"73088886094000";//渠道id
     orderDic[@"merchantId"] = @"10000000000003";//商户id
     orderDic[@"orginAmount"] = @"0";
     orderDic[@"payBillNo"] = @"40476859839485";
@@ -81,7 +81,7 @@ sdk会查询pay app是否安装，因此需要在info.plist文件中配置白名
 ```objc
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     
-    if ([url.host isEqualToString:@"dcspay"]) {
+    if ([url.host isEqualToString:@"mbrpay"]) {
         // 处理支付结果
         [[MBRPaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"result = %@",resultDic);
@@ -94,7 +94,7 @@ sdk会查询pay app是否安装，因此需要在info.plist文件中配置白名
 // NOTE: 9.0以后使用新API接口
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
     
-    if ([url.host isEqualToString:@"dcpay"]) {
+    if ([url.host isEqualToString:@"mbrpay"]) {
         // 处理支付结果
         [[MBRPaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"result = %@",resultDic);
@@ -147,7 +147,7 @@ PaySDKDemo\Security及下面所有文件
 
 orderStr示例如下：
 
-"amount=1.0000&attach=api_prepay&coinId=34190899187000&merchantId=10000000000003&orginAmount=0&payBillNo=40476859839485&refBizNo=2000010008&toAddr=0x91f8654587917f3a0c7cfc5fa05bd86dc0162ddb&sign=xCYemw/bby0dKUV6oGuKrbol/YQ2YpEQ1x9jkRz9WkJiI6OacJdYK5si7ZqFZA/kDUA9yywG5Poa3SZMHRjortRO1LdqPrw8l8EA/zToo9QjPghfO5aDaiXJCa8n8OiUUV0h8+N7crOQyKVwcGVuVZ0vMYGINrijIsPV3/u8Pqkk7LGVJgzTfcDUMjQ9HHsfsL3TLXdN32dZ8RmBMS7+OvVheRQqZszq2QyaJ/i+6ufcyMmYGqchydZpsPNAEJhdzUw3gIbSaKzaC+uRDvdyh74BycWZTkWc8iBjgWfcx8YOqoAeX8Z5Mgh6dHPQa/g5CXBAQi9klJNl1fvqjrTIXA=="
+"amount=0.01&channel=73088886094000&coinId=34190899187000&merchantId=10000000000003&merchantName=测试商户&orginAmount=10000000000000000&payBillNo=28028237201562&refBizNo=1533041803966&toAddr=0x91f8654587917f3a0c7cfc5fa05bd86dc0162ddb&sign=WvSE9iQjuD46G65OAUUtVmGQrO3cniZWKr7sEXwCD+ZJjqEdCQjV1q96uCeG8CSqUAt7N2TVlvpfWFQm1q19xAeYsr+Dpp49BQQNYgogZ2iGYzr180M6facM8nRovRxPUfZ3wHeEuyrC5/kXKh7PJzHpELh0SlJngJdfSi9yPK4W+2cOyCf0dvNaLQzbmcaJc3KNu3xPOI+JRZSyjHEiBEBl5atjMx24n8R0CstK50s7vEgFppZ2KtvLzdsjRlD0M8E043uT4wp6ltwN1OuPffW6PLTeGO2QT9rEfZBUFJvO2nGpVa5AAJhpSs+VEcUU0eoH1CEgInCLkPF3h9xtrA=="
 
 错误回调参数名称                |描述               
 -----------------------------|----------------------------------
