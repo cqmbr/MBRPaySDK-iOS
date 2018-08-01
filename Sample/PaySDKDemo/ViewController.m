@@ -12,9 +12,27 @@
 #import <YYCategories.h>
 #import <MBProgressHUD+BWMExtension/MBProgressHUD+BWMExtension.h>
 
+#ifdef cospay_target
 static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
 static const NSString *channel = @"73088886094000";
 static const NSString *merchantId = @"10000000000003";
+//应用注册scheme,在PaySDKDemo-Info.plist定义URL types
+static const NSString *appScheme = @"CosPaySDKDemo";
+#elif defined dcpay_target
+static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
+static const NSString *channel = @"38682966843081";
+static const NSString *merchantId = @"89898477937650";
+//应用注册scheme,在PaySDKDemo-Info.plist定义URL types
+static const NSString *appScheme = @"DCPaySDKDemo";
+#else
+static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
+static const NSString *channel = @"38682966843081";
+static const NSString *merchantId = @"89898477937650";
+//应用注册scheme,在PaySDKDemo-Info.plist定义URL types
+static const NSString *appScheme = @"PaySDKDemo";
+#endif
+
+
 
 @interface ViewController ()
 
@@ -68,9 +86,6 @@ static const NSString *merchantId = @"10000000000003";
                             NSString *orderInfo = responseDict[@"data"];
                             NSLog(@"\rorderInfo:\r%@",orderInfo);
                             
-                            //应用注册scheme,在PaySDKDemo-Info.plist定义URL types
-                            NSString *appScheme = @"PaySDKDemo";
-                            
                             //支付
                             [self pay:orderInfo appScheme:appScheme];
                             
@@ -111,8 +126,6 @@ static const NSString *merchantId = @"10000000000003";
     NSString* orderInfo = [self prepareOrderInfo:orderDic];
     NSLog(@"\rorderInfo:\r%@",orderInfo);
     
-    //应用注册scheme,在PaySDKDemo-Info.plist定义URL types
-    NSString *appScheme = @"PaySDKDemo";
     //支付
     [self pay:orderInfo appScheme:appScheme];
     

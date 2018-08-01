@@ -141,7 +141,7 @@ PaySDKDemo\Security及下面所有文件
  */
 - (void)payOrder:(NSString *)orderStr
       fromScheme:(NSString *)schemeStr
-        callBack:(errorBlock)errorCallBack;
+        callBack:(ErrorBlock)errorCallBack;
 ```
 
 

@@ -9,6 +9,32 @@
 /* Begin PBXBuildFile section */
 		0740CE4CD7FAEB6A158250C9 /* libPods-PaySDKDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B152C15E2DA487C249940C13 /* libPods-PaySDKDemoTests.a */; };
 		1B9CDCC634D9DB007FAB1EBF /* libPods-COSPaySDKDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3750F0ED82E9BC9418B6AD4 /* libPods-COSPaySDKDemoTests.a */; };
+		3C7BF9592111636D00C50B75 /* DCPRSAKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEA9A20F4BB25002261CC /* DCPRSAKey.m */; };
+		3C7BF95A2111636D00C50B75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D7E20A04821005EF6FF /* ViewController.m */; };
+		3C7BF95B2111636D00C50B75 /* DCPAPISigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA320F4BB25002261CC /* DCPAPISigner.m */; };
+		3C7BF95C2111636D00C50B75 /* DCPRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA020F4BB25002261CC /* DCPRSA.m */; };
+		3C7BF95D2111636D00C50B75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8920A04823005EF6FF /* main.m */; };
+		3C7BF95E2111636D00C50B75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D7B20A04821005EF6FF /* AppDelegate.m */; };
+		3C7BF95F2111636D00C50B75 /* DCPRSAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA120F4BB25002261CC /* DCPRSAHelper.m */; };
+		3C7BF9602111636D00C50B75 /* NSError+DCPRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEA9B20F4BB25002261CC /* NSError+DCPRSA.m */; };
+		3C7BF9622111636D00C50B75 /* libPods-PaySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C8FFC45A4735DA361A09F /* libPods-PaySDKDemo.a */; };
+		3C7BF9642111636D00C50B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8520A04823005EF6FF /* LaunchScreen.storyboard */; };
+		3C7BF9652111636D00C50B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8320A04823005EF6FF /* Assets.xcassets */; };
+		3C7BF9662111636D00C50B75 /* partner_rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA520F4BB25002261CC /* partner_rsa_private_key.pem */; };
+		3C7BF9672111636D00C50B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8020A04821005EF6FF /* Main.storyboard */; };
+		3C7BF9712111644600C50B75 /* DCPRSAKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEA9A20F4BB25002261CC /* DCPRSAKey.m */; };
+		3C7BF9722111644600C50B75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D7E20A04821005EF6FF /* ViewController.m */; };
+		3C7BF9732111644600C50B75 /* DCPAPISigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA320F4BB25002261CC /* DCPAPISigner.m */; };
+		3C7BF9742111644600C50B75 /* DCPRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA020F4BB25002261CC /* DCPRSA.m */; };
+		3C7BF9752111644600C50B75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8920A04823005EF6FF /* main.m */; };
+		3C7BF9762111644600C50B75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D7B20A04821005EF6FF /* AppDelegate.m */; };
+		3C7BF9772111644600C50B75 /* DCPRSAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA120F4BB25002261CC /* DCPRSAHelper.m */; };
+		3C7BF9782111644600C50B75 /* NSError+DCPRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEA9B20F4BB25002261CC /* NSError+DCPRSA.m */; };
+		3C7BF97A2111644600C50B75 /* libPods-PaySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C8FFC45A4735DA361A09F /* libPods-PaySDKDemo.a */; };
+		3C7BF97C2111644600C50B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8520A04823005EF6FF /* LaunchScreen.storyboard */; };
+		3C7BF97D2111644600C50B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8320A04823005EF6FF /* Assets.xcassets */; };
+		3C7BF97E2111644600C50B75 /* partner_rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA520F4BB25002261CC /* partner_rsa_private_key.pem */; };
+		3C7BF97F2111644600C50B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8020A04821005EF6FF /* Main.storyboard */; };
 		3C9B3D7C20A04821005EF6FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D7B20A04821005EF6FF /* AppDelegate.m */; };
 		3C9B3D7F20A04821005EF6FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D7E20A04821005EF6FF /* ViewController.m */; };
 		3C9B3D8220A04821005EF6FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8020A04821005EF6FF /* Main.storyboard */; };
@@ -52,6 +78,10 @@
 		3C193DD52110727B00951CC2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		3C193DD62110728700951CC2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		3C193DD72110728800951CC2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3C7BF96C2111636D00C50B75 /* PaySDKDemo(cospay).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PaySDKDemo(cospay).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7BF96D2111636E00C50B75 /* cospay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "cospay-Info.plist"; path = "/Users/zhanbin/Documents/programm/MBR/iOS/CocoaPodsFramework/MBRPaySDK/Sample/cospay-Info.plist"; sourceTree = "<absolute>"; };
+		3C7BF9842111644600C50B75 /* PaySDKDemo(dcpay).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PaySDKDemo(dcpay).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7BF9852111644600C50B75 /* dcpay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dcpay-Info.plist"; path = "/Users/zhanbin/Documents/programm/MBR/iOS/CocoaPodsFramework/MBRPaySDK/Sample/dcpay-Info.plist"; sourceTree = "<absolute>"; };
 		3C9B3D7720A04821005EF6FF /* PaySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9B3D7A20A04821005EF6FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C9B3D7B20A04821005EF6FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +128,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C7BF9612111636D00C50B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7BF9622111636D00C50B75 /* libPods-PaySDKDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7BF9792111644600C50B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7BF97A2111644600C50B75 /* libPods-PaySDKDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C9B3D7420A04821005EF6FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +182,8 @@
 				3C9B3D7820A04821005EF6FF /* Products */,
 				955CD7B1832B9DC3F0626B6D /* Pods */,
 				F4F5F519929E9598C3F6DBE0 /* Frameworks */,
+				3C7BF96D2111636E00C50B75 /* cospay-Info.plist */,
+				3C7BF9852111644600C50B75 /* dcpay-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +193,8 @@
 				3C9B3D7720A04821005EF6FF /* PaySDKDemo.app */,
 				3C9B3D8F20A04823005EF6FF /* PaySDKDemoTests.xctest */,
 				3C9B3D9A20A04823005EF6FF /* PaySDKDemoUITests.xctest */,
+				3C7BF96C2111636D00C50B75 /* PaySDKDemo(cospay).app */,
+				3C7BF9842111644600C50B75 /* PaySDKDemo(dcpay).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,6 +303,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3C7BF9562111636D00C50B75 /* PaySDKDemo(cospay) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7BF9692111636D00C50B75 /* Build configuration list for PBXNativeTarget "PaySDKDemo(cospay)" */;
+			buildPhases = (
+				3C7BF9572111636D00C50B75 /* [CP] Check Pods Manifest.lock */,
+				3C7BF9582111636D00C50B75 /* Sources */,
+				3C7BF9612111636D00C50B75 /* Frameworks */,
+				3C7BF9632111636D00C50B75 /* Resources */,
+				3C7BF9682111636D00C50B75 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PaySDKDemo(cospay)";
+			productName = COSPaySDKDemo;
+			productReference = 3C7BF96C2111636D00C50B75 /* PaySDKDemo(cospay).app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C7BF96E2111644600C50B75 /* PaySDKDemo(dcpay) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7BF9812111644600C50B75 /* Build configuration list for PBXNativeTarget "PaySDKDemo(dcpay)" */;
+			buildPhases = (
+				3C7BF96F2111644600C50B75 /* [CP] Check Pods Manifest.lock */,
+				3C7BF9702111644600C50B75 /* Sources */,
+				3C7BF9792111644600C50B75 /* Frameworks */,
+				3C7BF97B2111644600C50B75 /* Resources */,
+				3C7BF9802111644600C50B75 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PaySDKDemo(dcpay)";
+			productName = COSPaySDKDemo;
+			productReference = 3C7BF9842111644600C50B75 /* PaySDKDemo(dcpay).app */;
+			productType = "com.apple.product-type.application";
+		};
 		3C9B3D7620A04821005EF6FF /* PaySDKDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C9B3DA320A04823005EF6FF /* Build configuration list for PBXNativeTarget "PaySDKDemo" */;
@@ -348,11 +436,35 @@
 				3C9B3D7620A04821005EF6FF /* PaySDKDemo */,
 				3C9B3D8E20A04823005EF6FF /* PaySDKDemoTests */,
 				3C9B3D9920A04823005EF6FF /* PaySDKDemoUITests */,
+				3C7BF9562111636D00C50B75 /* PaySDKDemo(cospay) */,
+				3C7BF96E2111644600C50B75 /* PaySDKDemo(dcpay) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3C7BF9632111636D00C50B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7BF9642111636D00C50B75 /* LaunchScreen.storyboard in Resources */,
+				3C7BF9652111636D00C50B75 /* Assets.xcassets in Resources */,
+				3C7BF9662111636D00C50B75 /* partner_rsa_private_key.pem in Resources */,
+				3C7BF9672111636D00C50B75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7BF97B2111644600C50B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7BF97C2111644600C50B75 /* LaunchScreen.storyboard in Resources */,
+				3C7BF97D2111644600C50B75 /* Assets.xcassets in Resources */,
+				3C7BF97E2111644600C50B75 /* partner_rsa_private_key.pem in Resources */,
+				3C7BF97F2111644600C50B75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C9B3D7520A04821005EF6FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,7 +501,83 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh",
 				"${PODS_ROOT}/MBProgressHUD+BWMExtension/Example/MBProgressHUD+BWMExtension/MBProgressHUD+BWMExtension.xcassets",
-				"${PODS_ROOT}/MBRPaySDK/MBRPaySDK.framework/MBRPaySDKResource.bundle",
+				"${PODS_ROOT}/../../../../Pay/MBRPaySDK/MBRPaySDK/MBRPaySDKResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBRPaySDKResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C7BF9572111636D00C50B75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaySDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C7BF9682111636D00C50B75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh",
+				"${PODS_ROOT}/MBProgressHUD+BWMExtension/Example/MBProgressHUD+BWMExtension/MBProgressHUD+BWMExtension.xcassets",
+				"${PODS_ROOT}/../../../../Pay/MBRPaySDK/MBRPaySDK/MBRPaySDKResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBRPaySDKResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C7BF96F2111644600C50B75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaySDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C7BF9802111644600C50B75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh",
+				"${PODS_ROOT}/MBProgressHUD+BWMExtension/Example/MBProgressHUD+BWMExtension/MBProgressHUD+BWMExtension.xcassets",
+				"${PODS_ROOT}/../../../../Pay/MBRPaySDK/MBRPaySDK/MBRPaySDKResource.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -458,6 +646,36 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C7BF9582111636D00C50B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7BF9592111636D00C50B75 /* DCPRSAKey.m in Sources */,
+				3C7BF95A2111636D00C50B75 /* ViewController.m in Sources */,
+				3C7BF95B2111636D00C50B75 /* DCPAPISigner.m in Sources */,
+				3C7BF95C2111636D00C50B75 /* DCPRSA.m in Sources */,
+				3C7BF95D2111636D00C50B75 /* main.m in Sources */,
+				3C7BF95E2111636D00C50B75 /* AppDelegate.m in Sources */,
+				3C7BF95F2111636D00C50B75 /* DCPRSAHelper.m in Sources */,
+				3C7BF9602111636D00C50B75 /* NSError+DCPRSA.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7BF9702111644600C50B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7BF9712111644600C50B75 /* DCPRSAKey.m in Sources */,
+				3C7BF9722111644600C50B75 /* ViewController.m in Sources */,
+				3C7BF9732111644600C50B75 /* DCPAPISigner.m in Sources */,
+				3C7BF9742111644600C50B75 /* DCPRSA.m in Sources */,
+				3C7BF9752111644600C50B75 /* main.m in Sources */,
+				3C7BF9762111644600C50B75 /* AppDelegate.m in Sources */,
+				3C7BF9772111644600C50B75 /* DCPRSAHelper.m in Sources */,
+				3C7BF9782111644600C50B75 /* NSError+DCPRSA.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C9B3D7320A04821005EF6FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,6 +746,118 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3C7BF96A2111636D00C50B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CACCDA1AA9983F0F54D080 /* Pods-PaySDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N2XZN78Z5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					cospay_target,
+				);
+				INFOPLIST_FILE = "cospay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.COSPaySDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C7BF96B2111636D00C50B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C037C83E9673635BCC0FFE0E /* Pods-PaySDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N2XZN78Z5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					cospay_target,
+				);
+				INFOPLIST_FILE = "cospay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.COSPaySDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C7BF9822111644600C50B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CACCDA1AA9983F0F54D080 /* Pods-PaySDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N2XZN78Z5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					dcpay_target,
+				);
+				INFOPLIST_FILE = "dcpay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.DCPaySDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C7BF9832111644600C50B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C037C83E9673635BCC0FFE0E /* Pods-PaySDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N2XZN78Z5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					dcpay_target,
+				);
+				INFOPLIST_FILE = "dcpay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.DCPaySDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3C9B3DA120A04823005EF6FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -767,6 +1097,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C7BF9692111636D00C50B75 /* Build configuration list for PBXNativeTarget "PaySDKDemo(cospay)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7BF96A2111636D00C50B75 /* Debug */,
+				3C7BF96B2111636D00C50B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7BF9812111644600C50B75 /* Build configuration list for PBXNativeTarget "PaySDKDemo(dcpay)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7BF9822111644600C50B75 /* Debug */,
+				3C7BF9832111644600C50B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3C9B3D7220A04821005EF6FF /* Build configuration list for PBXProject "PaySDKDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
