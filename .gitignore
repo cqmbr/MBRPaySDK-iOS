@@ -16,6 +16,7 @@ Sample/DerivedData/
 *.perspectivev3
 !default.perspectivev3
 Sample/xcuserdata/
+Sample/*.xcuserstate
 
 ## Other
 *.moved-aside
