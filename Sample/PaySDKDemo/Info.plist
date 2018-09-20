@@ -33,6 +33,7 @@
 	<string>1</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>mbrpay8266164582560</string>
 		<string>mbrpay73088886094000</string>
 		<string>mbrpay38682966843081</string>
 	</array>

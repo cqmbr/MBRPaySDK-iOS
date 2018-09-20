@@ -25,11 +25,21 @@ static const NSString *merchantId = @"89898477937650";
 //应用注册scheme,在PaySDKDemo-Info.plist定义URL types
 static const NSString *appScheme = @"DCPaySDKDemo";
 #else
+//static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
+//static const NSString *channel = @"38682966843081";
+//static const NSString *merchantId = @"89898477937650";
+////应用注册scheme,在PaySDKDemo-Info.plist定义URL types
+//static const NSString *appScheme = @"PaySDKDemo";
+
+// qianlong配置
 static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
-static const NSString *channel = @"38682966843081";
-static const NSString *merchantId = @"89898477937650";
+static const NSString *channel = @"8266164582560";
+static const NSString *merchantId = @"8266163269740";
 //应用注册scheme,在PaySDKDemo-Info.plist定义URL types
 static const NSString *appScheme = @"PaySDKDemo";
+
+static const NSString *privateKey = @"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCM0wuMJ5Od7z+nvds/C2vpyS6x7h6lUsrmGH9ANZoyIYwIzN4QWQuL940DPNF9t0SbDtffqbshwEjp3bWynQpC/EPLz4Od0zzvbf58pvfXaIh8nI8r3ldMTAmmtT64oZK2xrMwTJUWF5En1MFpCSr68yU4/X+2Rp1NpE2vimp34H2msxCoYi91FdBh5XcxjQPM4j2gGdY3kn2hcTSx5beKITb2bBW+nMKObT7JyTKFMFVUYQ0Yt/xghCK8Cz3dIAr20rLBFwJ4/suJlUHF6XadVxBFCxvdHlOEP1+02tEGhPb/TjMOSZO8zKXH6PaMyN8yrqafcMkEfPkZKUEWVjLXAgMBAAECggEALu7/gDyIdDCSlIMwGPjjhE0qpN5plEvdl4Y+ktXKiD6p/xzYPbaPpJxigNu6Lh3wXYU66S4WUg9VvavIrLit/Nk6dyi4AteuDVYpZL35B++s3WsIRGSbz6/f35G0T7B5xzS977D2VyCPnijINQt7KZvzoeTKtaMfNgs2YPTOuxi1TtnroDkqjhHplj4P/SHjalBI2ipXWyGQFgDKaexQafbESd+aNBR3d8PgOlouPBdlVJ5PZg9+LuWlLj+l7MqQZfreWN8YpVPYi+OreT+95j/C7QEDv/6kYQEqME03FZfAUCB2WI35aABuzzwcwzGb47+xnBH/+6M17hXULv+DsQKBgQDSTKw3AVwR+QqR3GTcocQGtWmxqKFFWcp+mri0HV8o2yBowhJVLsuVF+nyAyZSR1bZyJI+e/EOaoLFyEHiwtLAAr0DnNT5ZMzmqArUxqBMdRpMUbSdCFyTfD4adlHfFhVTH6OD2YpcUTFgtYEBYJjT8tpdvxM8gvYKzm2VcI0BrQKBgQCrbVnrd0nfy+z2XjgfCWAbWgwMOyGg5/2jeHJQloJzgxuMfdzzdMIcOyTzHHMAnExHw74R6Es0ZZY8iNaxGlfTy8xPS0s64t5+AFD6qhAwfIMTLCLkjbPMXYv7FT0e0cPvcvwc9/vh6Faf9PQKpxu7NKEYzTH4pNa6tNSJz/u/EwKBgQCtPlac1bToZXYMpTg9/dGECUzx+04n2ImVdJZ2Yr/y41m2kzIRFITH5TRnl6qpG3Xz4WSArw/tZVcn4gpM6Vw+q8LUSA23ChA2b/bERIDnm4y3lJOqzameIjrzB8f4dLPKj4Tf6IUv+f8ogT2uScp8yFKV6gPJ1MUmL9pcwqSW3QKBgBUdOt4Nq0OtUlpl8HOiK/wycxlujw3KhSsFQs86OocPtuzu86/oyZ/AiSSIdIG2vo54RYjfG6Qwfvilwgu+OuMTTu7VT0bJeq36S/8Twzq1m09ZOFL+QQ8C1qLuUsDhBUkQ2IyY3qVMgJ7jBMvrGTdNnCn53BXL98a3TxZKT6+RAoGAFrWw5xS6Huo38hV5ryoV+wOrAh11wA9ff5cuvuzAELWafmMoCynUwiZYcTlxeowe8cwByhoLQYv6bDezoa7Jls4yDDh06Ajbo3EhkI114BOVi6qgbZh3bcwRjCJjoUhI9HTycmzDxGS3KKM7/R5ObX6jKLClZaMlUiEsd0TyGoQ=";
+
 #endif
 
 
@@ -66,7 +76,9 @@ static const NSString *appScheme = @"PaySDKDemo";
 -(void)prePay:(NSString *)coinId amount:(NSString *)amount{
     
     MBProgressHUD *hud = [MBProgressHUD bwm_showHUDAddedTo:self.view title:@"" animated:YES];
-    NSString *urlString = [NSString stringWithFormat:@"%@?channel=%@&merchantId=%@&coinId=%@&amount=%@",urlPath,channel,merchantId,coinId,amount];
+//    NSString *urlString = [NSString stringWithFormat:@"%@?channel=%@&merchantId=%@&coinId=%@&amount=%@",urlPath,channel,merchantId,coinId,amount];
+    NSString *pKey = [self urlEncodedString:privateKey];
+    NSString *urlString = [NSString stringWithFormat:@"%@?channel=%@&merchantId=%@&private_key=%@&coinId=%@&amount=%@",urlPath,channel,merchantId,pKey,coinId,amount];
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSURLSession *session=[NSURLSession sharedSession];
@@ -197,6 +209,23 @@ static const NSString *appScheme = @"PaySDKDemo";
     int resultStatus = [resultDic[@"resultStatus"] intValue];
     NSString *message = resultDic[@"message"];
     [MBProgressHUD bwm_showTitle:message toView:self.view hideAfter:2];
+}
+
+#pragma mark -
+- (NSString *)urlEncodedString:(NSString*)str {
+    CFStringRef stringRef = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                                    (CFStringRef)str,
+                                                                    NULL,
+                                                                    CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"),
+                                                                    kCFStringEncodingUTF8);
+    NSString *encodedString = (__bridge NSString *)stringRef;
+    CFRelease(stringRef);
+    
+    if (encodedString) {
+        return encodedString;
+    }
+    
+    return nil;
 }
 
 @end
