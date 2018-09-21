@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MBRPaySDK/MBRPayConfig.h>
 
 typedef NS_ENUM(NSUInteger, ErrorState) {
     ErrorStateCancel = 4, //用户已取消安装
@@ -16,7 +17,7 @@ typedef NS_ENUM(NSUInteger, ErrorState) {
 
 typedef void(^CompletionBlock)(NSDictionary *resultDic);
 
-typedef void(^errorBlock)(NSDictionary *errorDic);
+typedef void(^ErrorBlock)(NSDictionary *errorDic);
 
 @interface MBRPaySDK : NSObject
 
@@ -28,13 +29,20 @@ typedef void(^errorBlock)(NSDictionary *errorDic);
 + (instancetype)defaultService;
 
 /**
+ 配置
+ */
+@property (nonatomic, strong) MBRPayConfig* payConfig;
+
+/**
  *  支付接口
  *
  *  @param orderStr       订单信息
  *  @param schemeStr      调用支付的app注册在info.plist中的scheme
+ *  @param errorCallBack  错误回调
  */
 - (void)payOrder:(NSString *)orderStr
-      fromScheme:(NSString *)schemeStr callBack:(errorBlock)errorCallBack;
+      fromScheme:(NSString *)schemeStr
+        callBack:(ErrorBlock)errorCallBack;
 
 /**
  *  处理MBRPay app支付跳回商户app携带的支付结果Url

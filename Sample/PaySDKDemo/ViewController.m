@@ -32,8 +32,8 @@ static const NSString *appScheme = @"DCPaySDKDemo";
 //static const NSString *appScheme = @"PaySDKDemo";
 
 // qianlong配置
-//static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
-static const NSString *urlPath = @"http://192.168.1.28:9927/payIndex/prepay";
+static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
+//static const NSString *urlPath = @"http://192.168.1.28:9927/payIndex/prepay";
 static const NSString *channel = @"8266164582560";
 static const NSString *merchantId = @"8266163269740";
 //应用注册scheme,在PaySDKDemo-Info.plist定义URL types
@@ -59,7 +59,7 @@ static const NSString *privateKey = @"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAg
 
 - (void)configPaySdk {
     MBRPayConfig *config = [[MBRPayConfig alloc] init];
-    config.environmnent = MBREnvironmentTest;
+    config.environmnent = MBREnvironmentProduction;
     [MBRPaySDK defaultService].payConfig = config;
 }
 

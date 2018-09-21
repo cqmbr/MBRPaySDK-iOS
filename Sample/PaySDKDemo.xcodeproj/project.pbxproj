@@ -17,7 +17,6 @@
 		3C7BF95E2111636D00C50B75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D7B20A04821005EF6FF /* AppDelegate.m */; };
 		3C7BF95F2111636D00C50B75 /* DCPRSAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA120F4BB25002261CC /* DCPRSAHelper.m */; };
 		3C7BF9602111636D00C50B75 /* NSError+DCPRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEA9B20F4BB25002261CC /* NSError+DCPRSA.m */; };
-		3C7BF9622111636D00C50B75 /* libPods-PaySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C8FFC45A4735DA361A09F /* libPods-PaySDKDemo.a */; };
 		3C7BF9642111636D00C50B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8520A04823005EF6FF /* LaunchScreen.storyboard */; };
 		3C7BF9652111636D00C50B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8320A04823005EF6FF /* Assets.xcassets */; };
 		3C7BF9662111636D00C50B75 /* partner_rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA520F4BB25002261CC /* partner_rsa_private_key.pem */; };
@@ -30,7 +29,6 @@
 		3C7BF9762111644600C50B75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B3D7B20A04821005EF6FF /* AppDelegate.m */; };
 		3C7BF9772111644600C50B75 /* DCPRSAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA120F4BB25002261CC /* DCPRSAHelper.m */; };
 		3C7BF9782111644600C50B75 /* NSError+DCPRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFEA9B20F4BB25002261CC /* NSError+DCPRSA.m */; };
-		3C7BF97A2111644600C50B75 /* libPods-PaySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C8FFC45A4735DA361A09F /* libPods-PaySDKDemo.a */; };
 		3C7BF97C2111644600C50B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8520A04823005EF6FF /* LaunchScreen.storyboard */; };
 		3C7BF97D2111644600C50B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B3D8320A04823005EF6FF /* Assets.xcassets */; };
 		3C7BF97E2111644600C50B75 /* partner_rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA520F4BB25002261CC /* partner_rsa_private_key.pem */; };
@@ -51,6 +49,7 @@
 		3CAFEAAB20F4BB25002261CC /* partner_rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3CAFEAA520F4BB25002261CC /* partner_rsa_private_key.pem */; };
 		4DD679553517E33A0A3F8491 /* libPods-PaySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C8FFC45A4735DA361A09F /* libPods-PaySDKDemo.a */; };
 		50BC3A4425BDCB890BFAF6AD /* libPods-PaySDKDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0444B9201557746A539B80 /* libPods-PaySDKDemoUITests.a */; };
+		B320C3ED6A9B5DCF09A0F054 /* libPods-PaySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C8FFC45A4735DA361A09F /* libPods-PaySDKDemo.a */; };
 		EC4A5ADEE974E1545A2A63BA /* libPods-COSPaySDKDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CD4B07194BF5463567B8AA /* libPods-COSPaySDKDemoUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -117,13 +116,13 @@
 		63A0D2C4DC9DF701B6FBC98A /* libPods-COSPaySDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-COSPaySDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6801DCAB060BF03BF0C639A4 /* Pods-COSPaySDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COSPaySDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-COSPaySDKDemo/Pods-COSPaySDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6AFE445FCA0F830B7A5C6B20 /* Pods-PaySDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaySDKDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaySDKDemoTests/Pods-PaySDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		78CACCDA1AA9983F0F54D080 /* Pods-PaySDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaySDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8EF280C8DB88FBB7CD9BB824 /* Pods-PaySDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaySDKDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaySDKDemoUITests/Pods-PaySDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9600C404AEC53B3C59079294 /* Pods-PaySDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaySDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B152C15E2DA487C249940C13 /* libPods-PaySDKDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PaySDKDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44F4F03A94B017B25262A06 /* Pods-COSPaySDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COSPaySDKDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-COSPaySDKDemoTests/Pods-COSPaySDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		C037C83E9673635BCC0FFE0E /* Pods-PaySDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaySDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C3750F0ED82E9BC9418B6AD4 /* libPods-COSPaySDKDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-COSPaySDKDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB942A2EFF031DEB0D1E17C6 /* Pods-PaySDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaySDKDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaySDKDemoUITests/Pods-PaySDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E75FE3A867FC85B212AC95C1 /* Pods-PaySDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaySDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F62E0D2C8CE280963473AAE4 /* Pods-COSPaySDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COSPaySDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-COSPaySDKDemo/Pods-COSPaySDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7BF9622111636D00C50B75 /* libPods-PaySDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +138,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7BF97A2111644600C50B75 /* libPods-PaySDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD679553517E33A0A3F8491 /* libPods-PaySDKDemo.a in Frameworks */,
+				B320C3ED6A9B5DCF09A0F054 /* libPods-PaySDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,12 +275,12 @@
 				B44F4F03A94B017B25262A06 /* Pods-COSPaySDKDemoTests.release.xcconfig */,
 				4F0C12A45C0DD431B1CBE722 /* Pods-COSPaySDKDemoUITests.debug.xcconfig */,
 				456214F48B12B907CDBEAAEB /* Pods-COSPaySDKDemoUITests.release.xcconfig */,
-				78CACCDA1AA9983F0F54D080 /* Pods-PaySDKDemo.debug.xcconfig */,
-				C037C83E9673635BCC0FFE0E /* Pods-PaySDKDemo.release.xcconfig */,
 				6AFE445FCA0F830B7A5C6B20 /* Pods-PaySDKDemoTests.debug.xcconfig */,
 				429E3938AB09A0445B95115A /* Pods-PaySDKDemoTests.release.xcconfig */,
 				8EF280C8DB88FBB7CD9BB824 /* Pods-PaySDKDemoUITests.debug.xcconfig */,
 				DB942A2EFF031DEB0D1E17C6 /* Pods-PaySDKDemoUITests.release.xcconfig */,
+				9600C404AEC53B3C59079294 /* Pods-PaySDKDemo.debug.xcconfig */,
+				E75FE3A867FC85B212AC95C1 /* Pods-PaySDKDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -307,11 +305,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C7BF9692111636D00C50B75 /* Build configuration list for PBXNativeTarget "PaySDKDemo(cospay)" */;
 			buildPhases = (
-				3C7BF9572111636D00C50B75 /* [CP] Check Pods Manifest.lock */,
 				3C7BF9582111636D00C50B75 /* Sources */,
 				3C7BF9612111636D00C50B75 /* Frameworks */,
 				3C7BF9632111636D00C50B75 /* Resources */,
-				3C7BF9682111636D00C50B75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,11 +322,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C7BF9812111644600C50B75 /* Build configuration list for PBXNativeTarget "PaySDKDemo(dcpay)" */;
 			buildPhases = (
-				3C7BF96F2111644600C50B75 /* [CP] Check Pods Manifest.lock */,
 				3C7BF9702111644600C50B75 /* Sources */,
 				3C7BF9792111644600C50B75 /* Frameworks */,
 				3C7BF97B2111644600C50B75 /* Resources */,
-				3C7BF9802111644600C50B75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -501,88 +495,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh",
 				"${PODS_ROOT}/MBProgressHUD+BWMExtension/Example/MBProgressHUD+BWMExtension/MBProgressHUD+BWMExtension.xcassets",
-				"${PODS_ROOT}/../../../../Pay/MBRPaySDK/MBRPaySDK/MBRPaySDKResource.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBRPaySDKResource.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3C7BF9572111636D00C50B75 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PaySDKDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3C7BF9682111636D00C50B75 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh",
-				"${PODS_ROOT}/MBProgressHUD+BWMExtension/Example/MBProgressHUD+BWMExtension/MBProgressHUD+BWMExtension.xcassets",
-				"${PODS_ROOT}/../../../../Pay/MBRPaySDK/MBRPaySDK/MBRPaySDKResource.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBRPaySDKResource.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3C7BF96F2111644600C50B75 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PaySDKDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3C7BF9802111644600C50B75 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PaySDKDemo/Pods-PaySDKDemo-resources.sh",
-				"${PODS_ROOT}/MBProgressHUD+BWMExtension/Example/MBProgressHUD+BWMExtension/MBProgressHUD+BWMExtension.xcassets",
-				"${PODS_ROOT}/../../../../Pay/MBRPaySDK/MBRPaySDK/MBRPaySDKResource.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBRPaySDKResource.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -748,7 +664,6 @@
 /* Begin XCBuildConfiguration section */
 		3C7BF96A2111636D00C50B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78CACCDA1AA9983F0F54D080 /* Pods-PaySDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -764,10 +679,7 @@
 				);
 				INFOPLIST_FILE = "cospay-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.COSPaySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -776,7 +688,6 @@
 		};
 		3C7BF96B2111636D00C50B75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C037C83E9673635BCC0FFE0E /* Pods-PaySDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -792,10 +703,7 @@
 				);
 				INFOPLIST_FILE = "cospay-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.COSPaySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -804,7 +712,6 @@
 		};
 		3C7BF9822111644600C50B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78CACCDA1AA9983F0F54D080 /* Pods-PaySDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -820,10 +727,7 @@
 				);
 				INFOPLIST_FILE = "dcpay-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.DCPaySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -832,7 +736,6 @@
 		};
 		3C7BF9832111644600C50B75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C037C83E9673635BCC0FFE0E /* Pods-PaySDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -848,10 +751,7 @@
 				);
 				INFOPLIST_FILE = "dcpay-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.DCPaySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -972,7 +872,7 @@
 		};
 		3C9B3DA420A04823005EF6FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78CACCDA1AA9983F0F54D080 /* Pods-PaySDKDemo.debug.xcconfig */;
+			baseConfigurationReference = 9600C404AEC53B3C59079294 /* Pods-PaySDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -983,10 +883,7 @@
 				);
 				INFOPLIST_FILE = PaySDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.PaySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -995,7 +892,7 @@
 		};
 		3C9B3DA520A04823005EF6FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C037C83E9673635BCC0FFE0E /* Pods-PaySDKDemo.release.xcconfig */;
+			baseConfigurationReference = E75FE3A867FC85B212AC95C1 /* Pods-PaySDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1006,10 +903,7 @@
 				);
 				INFOPLIST_FILE = PaySDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.PaySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1024,11 +918,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N2XZN78Z5;
 				INFOPLIST_FILE = PaySDKDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.MBRPaySDKDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1044,11 +934,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N2XZN78Z5;
 				INFOPLIST_FILE = PaySDKDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.MBRPaySDKDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1063,11 +949,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N2XZN78Z5;
 				INFOPLIST_FILE = PaySDKDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.MBRPaySDKDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1082,11 +964,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N2XZN78Z5;
 				INFOPLIST_FILE = PaySDKDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbr.MBRPaySDKDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
