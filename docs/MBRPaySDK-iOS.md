@@ -129,6 +129,14 @@ PaySDKDemo\Security及下面所有文件
 + (instancetype *)defaultService;
 ```
 
+### 设置配置项(1.0.7新增)
+```objc
+/**
+ 配置
+ */
+@property (nonatomic, strong) MBRPayConfig* payConfig;
+```
+
 ### 订单支付
 主要为商户提供订单支付功能
 ```objc
