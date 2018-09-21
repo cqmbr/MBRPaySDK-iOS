@@ -32,7 +32,8 @@ static const NSString *appScheme = @"DCPaySDKDemo";
 //static const NSString *appScheme = @"PaySDKDemo";
 
 // qianlong配置
-static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
+//static const NSString *urlPath = @"http://47.100.47.200:9927/payIndex/prepay";
+static const NSString *urlPath = @"http://192.168.1.28:9927/payIndex/prepay";
 static const NSString *channel = @"8266164582560";
 static const NSString *merchantId = @"8266163269740";
 //应用注册scheme,在PaySDKDemo-Info.plist定义URL types
@@ -53,6 +54,11 @@ static const NSString *privateKey = @"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAg
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlePayResult:) name:@"MBRPayResult" object:nil];
+    [self configPaySdk];
+}
+
+- (void)configPaySdk {
+    [MBRPaySDK defaultService];
 }
 
 -(void)dealloc {
