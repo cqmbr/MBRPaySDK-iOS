@@ -58,7 +58,9 @@ static const NSString *privateKey = @"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAg
 }
 
 - (void)configPaySdk {
-    [MBRPaySDK defaultService];
+    MBRPayConfig *config = [[MBRPayConfig alloc] init];
+    config.environmnent = MBREnvironmentTest;
+    [MBRPaySDK defaultService].payConfig = config;
 }
 
 -(void)dealloc {
