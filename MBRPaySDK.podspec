@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "MBRPaySDK"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "MBRPaySDK SDK for iOS."
 
   s.description  = <<-DESC
