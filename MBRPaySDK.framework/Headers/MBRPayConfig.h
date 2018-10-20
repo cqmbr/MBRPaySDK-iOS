@@ -43,4 +43,8 @@ typedef NS_ENUM(NSInteger, MBREnvironmentType){
 /// 环境,默认MBREnvironmentProduction
 @property (nonatomic, assign) MBREnvironmentType environmnent;
 
+/// 引导下载url
+@property (nonatomic, copy) NSString* downLoadUrl;
+
+
 @end
