@@ -7,7 +7,7 @@
 
 在工程的Podfile文件里面添加以下代码：
 ```
-  pod 'MBRPaySDK','~>1.0.7'
+  pod 'MBRPaySDK','~>1.0.9'
 ```
   保存并执行pod install,然后用后缀为.xcworkspace的文件打开工程。
 
