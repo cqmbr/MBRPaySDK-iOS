@@ -136,7 +136,7 @@ PaySDKDemo\Security及下面所有文件
  */
 @property (nonatomic, strong) MBRPayConfig* payConfig;
 ```
-配置环境示例（如果不设置，默认会使用生产环境）
+配置环境示例（根据环境的不同会下载不同的安装包，如果不设置，默认为生产环境）
 ```objc
 MBRPayConfig *config = [[MBRPayConfig alloc] init];
 config.environmnent = MBREnvironmentProduction;
