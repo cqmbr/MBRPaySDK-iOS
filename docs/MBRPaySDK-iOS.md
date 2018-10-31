@@ -136,6 +136,12 @@ PaySDKDemo\Security及下面所有文件
  */
 @property (nonatomic, strong) MBRPayConfig* payConfig;
 ```
+#### 配置环境示例（如果不设置，默认会使用生产环境）
+```objc
+MBRPayConfig *config = [[MBRPayConfig alloc] init];
+config.environmnent = MBREnvironmentProduction;
+[MBRPaySDK defaultService].payConfig = config;
+```
 
 ### 订单支付
 主要为商户提供订单支付功能
