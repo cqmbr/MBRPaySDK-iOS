@@ -19,6 +19,7 @@ static const NSString *merchantId = @"10000000000003";
 static const NSString *appScheme = @"CosPaySDKDemo";
 
 @interface ViewController ()
+- (IBAction)clickPayUSDTButton:(id)sender;
 
 @end
 
@@ -53,6 +54,10 @@ static const NSString *appScheme = @"CosPaySDKDemo";
 }
 - (IBAction)clickPayPHButton:(id)sender {
     [self prePay:@"7739138616000" amount:@"1"];
+}
+
+- (IBAction)clickPayUSDTButton:(id)sender {
+    [self prePay:@"44560006938890" amount:@"0.01"];
 }
 
 - (IBAction)clickSimulationPayButton:(id)sender {
