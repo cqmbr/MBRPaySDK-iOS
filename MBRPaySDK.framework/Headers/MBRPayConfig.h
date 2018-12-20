@@ -11,27 +11,27 @@
 /**
  环境枚举
  */
-typedef NS_ENUM(NSInteger, MBREnvironmentType){
+typedef NS_ENUM(NSInteger, MBRPaySDKEnvironmentType){
     /**
      *    未知环境
      */
-    MBREnvironmentUnknow            =   -1,
+    MBRPaySDKEnvironmentUnknow            =   -1,
     /**
      *    开发环境(test)
      */
-    MBREnvironmentDevelop           =   1,
+    MBRPaySDKEnvironmentDevelop           =   1,
     /**
      *    测试环境(debug)
      */
-    MBREnvironmentTest              =   2,
+    MBRPaySDKEnvironmentTest              =   2,
     /**
      *    预生产环境
      */
-    MBREnvironmentPreProduction     =   3,
+    MBRPaySDKEnvironmentPreProduction     =   3,
     /**
      *    生产环境
      */
-    MBREnvironmentProduction        =   4
+    MBRPaySDKEnvironmentProduction        =   4
 };
 
 
@@ -40,8 +40,8 @@ typedef NS_ENUM(NSInteger, MBREnvironmentType){
  */
 @interface MBRPayConfig : NSObject
 
-/// 环境,默认MBREnvironmentProduction
-@property (nonatomic, assign) MBREnvironmentType environmnent;
+/// 环境,默认MBRPaySDKEnvironmentProduction
+@property (nonatomic, assign) MBRPaySDKEnvironmentType environmnent;
 
 /// 引导下载url
 @property (nonatomic, copy) NSString* downLoadUrl;

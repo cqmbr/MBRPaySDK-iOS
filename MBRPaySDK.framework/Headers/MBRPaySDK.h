@@ -53,6 +53,14 @@ typedef void(^ErrorBlock)(NSDictionary *errorDic);
 - (void)processOrderWithPaymentResult:(NSURL *)resultUrl
                       standbyCallback:(CompletionBlock)completionBlock;
 
+/**
+ 获取支付app安装地址
+
+ @param channel 渠道号
+ @return 安装地址
+ */
+- (NSString *)getInstallAppUrl:(NSString *)channel;
+
 
 @end
 
